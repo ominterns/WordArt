@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WordArt</title>
+        <link type = "text/css" rel = "stylesheet" href = "wordart.css"/>
+        <script type = "text/javascript" src="jquery.js"></script>
+        <script type = "text/javascript" src="jquery-ui.js"></script>
+        <script type = "text/javascript" src="jquery.ui.touch-punch.min.js"></script>
+        <script type = "text/javascript" src="touchpunch.js"></script>
+        <script type = "text/javascript" src="jquerymobile.js"></script>
+        <script type = "text/javascript" src="wordart.js"></script>   
+    </head>
+    <body>    
+        <form id="form"><input type="text" name="chosenword" id="phrase" value = "Enter anything."/></form>
+        <table id="top">
+            <tr id="letters"></tr>
+        </table>
+        <table id="toolbar">
+            <tr>
+                <td><select id="font-family">
+                    <option value="Font" selected disabled>Font</option>
+                    <option value="Andale Mono" class="font">Andale Mono</option>
+                    <option value="Arial" class="font">Arial</option>
+                    <option value="Arial Black" class="font">Arial Black</option>
+                    <option value="Arial Narrow" class="font">Arial Narrow</option>
+                    <option value="Arial Rounded MT Bold" class="font">Arial Rounded MT Bold</option>
+                    <option value="Baskerville" class="font">Baskerville</option>
+                    <option value="Book Antiqua" class="font">Book Antiqua</option>
+                    <option value="Calibri" class="font">Calibri</option>
+                    <option value="Cambria" class="font">Cambria</option>
+                    <option value="Candara" class="font">Candara</option>
+                    <option value="Century Gothic" class="font">Century Gothic</option>
+                    <option value="Comic Sans MS" class="font">Comic Sans MS</option>
+                    <option value="Courier New" class="font">Courier New</option>
+                    <option value="Geneva" class="font">Geneva</option>
+                    <option value="Georgia" class="font">Georgia</option>
+                    <option value="Helvetica" class="font">Helvetica</option>
+                    <option value="Impact" class="font">Impact</option>
+                    <option value="Lucida" class="font">Lucida Grande</option>
+                    <option value="Optima" class="font">Optima</option>
+                    <option value="Palatino Linotype" class="font">Palatino Linotype</option>
+                    <option value="Verdana" class="font">Verdana</option>
+                    <option value="Tahoma" class="font">Tahoma</option>
+                    <option value="Times New Roman" class="font">Times New Roman</option>
+                </select></td>
+                <td><h1 id="fontsample">AaBbCc</h1></td>
+            </tr>
+            <tr>
+                <td><select id="font-size">
+                    <option value="Size" selected disabled>Size</option>        
+                </select></td>
+            </tr>
+            <tr>
+                <td><select id="color">
+                    <option value="Color" selected disabled>Color</option>
+                    <option value="#00FFFF" class="color">Aqua</option>
+                    <option value="#000000" class="color">Black</option>
+                    <option value="#0000FF" class="color">Blue</option>
+                    <option value="#FF00FF" class="color">Fuschia</option>
+                    <option value="#808080" class="color">Gray</option>
+                    <option value="#008000" class="color">Green</option>
+                    <option value="#00FF00" class="color">Lime</option>
+                    <option value="#800000" class="color">Maroon</option>
+                    <option value="#000080" class="color">Navy</option>
+                    <option value="#808000" class="color">Olive</option>
+                    <option value="#800080" class="color">Purple</option>
+                    <option value="#FF0000" class="color">Red</option>
+                    <option value="#C0C0C0" class="color">Silver</option>
+                    <option value="#008080" class="color">Teal</option>
+                    <option value="#FFFFFF" class="color">White</option>
+                    <option value="#FFFF00" class="color">Yellow</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><select id="workspace-color">
+                    <option value="Background Color" selected disabled>Background Color</option>
+                    <option value="#00FFFF">Aqua</option>
+                    <option value="#000000">Black</option>
+                    <option value="#0000FF">Blue</option>
+                    <option value="#FF00FF">Fuschia</option>
+                    <option value="#808080">Gray</option>
+                    <option value="#008000">Green</option>
+                    <option value="#00FF00">Lime</option>
+                    <option value="#800000">Maroon</option>
+                    <option value="#000080">Navy</option>
+                    <option value="#808000">Olive</option>
+                    <option value="#800080">Purple</option>
+                    <option value="#FF0000">Red</option>
+                    <option value="#C0C0C0">Silver</option>
+                    <option value="#008080">Teal</option>
+                    <option value="#FFFFFF">White</option>
+                    <option value="#FFFF00">Yellow</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><div id="everything" class="button">Change Everything</div></td>
+                <td><div id="random" class="button">Randomize</div></td>
+                <td><div id="new" class="button">New Word</div></td>
+                <td><div id="clear" class="button">Clear All</div></td>
+                <td><div id="space"></div></td>
+                <td><div id="share" class="button">Share!</div></td>
+            </tr>
+        </table>
+        <div id="workspace"></div>
+    </body>
+</html>
